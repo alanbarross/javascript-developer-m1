@@ -1,5 +1,5 @@
 
-const entradas = [10, 5, 50, 10, 98, 23, 33, 44, 100, 1, 7];
+const entradas = [5, 1, 3, 9, 10, 12, 22, 4, 40];
 let i = 0;
 
 function gets() {
@@ -12,4 +12,9 @@ function print(texto) {
     console.log(texto);
 }
 
-module.exports = { gets, print };
+function tamanhoLista() {
+    const tamanho = entradas.length;
+    return tamanho;
+}
+
+module.exports = { gets, print, tamanhoLista };
